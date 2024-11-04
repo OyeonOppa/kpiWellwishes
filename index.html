@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KPI อวยพรออนไลน์ (ทดสอบ)</title>
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <center><h1>ระบบทดสอบ<p>อวยพรออนไลน์ KPI</h1></center>
+  
+  <!-- ฟอร์มอวยพร -->
+  <form id="wishForm">
+    <input type="text" id="name" placeholder="ชื่อของคุณ" required>
+    <textarea id="message" placeholder="คำอวยพรของคุณ" required></textarea>
+    <button type="submit">ส่งคำอวยพร</button>
+  </form>
+  
+  <!-- ส่วนแสดงคำอวยพร -->
+  <h2>คำอวยพรทั้งหมด</h2>
+  <div id="messagesList"></div>
+  
+  <!-- เชื่อมต่อ script.js -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    color: #333; /* สีข้อความ */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff6f61; /* สีของหัวข้อ */
+  }
+
+  h2 {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333; /* สีของหัวข้อรอง */
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* กว้างฟอร์ม */
+    background-color: #fff; /* สีพื้นฟอร์ม */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงาฟอร์ม */
+    padding: 20px; /* ช่องว่างภายในฟอร์ม */
+  }
+
+  input[type="text"],
+  textarea {
+    border: 1px solid #ddd; /* ขอบของฟอร์ม */
+    border-radius: 5px; /* มุมโค้ง */
+    padding: 10px; /* ช่องว่างภายใน */
+    margin-bottom: 15px; /* ช่องว่างระหว่างฟิลด์ */
+    font-size: 1em; /* ขนาดตัวอักษร */
+    transition: border-color 0.3s; /* การเปลี่ยนสีขอบ */
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #ff6f61; /* เปลี่ยนสีขอบเมื่อเลือก */
+    outline: none; /* ไม่มีกรอบ */
+  }
+
+  button {
+    background-color: #ff6f61; /* สีพื้นหลังของปุ่ม */
+    color: #fff; /* สีข้อความในปุ่ม */
+    border: none; /* ไม่มีขอบ */
+    border-radius: 5px; /* มุมโค้งของปุ่ม */
+    padding: 10px; /* ช่องว่างภายในปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ */
+    font-size: 1em; /* ขนาดตัวอักษร */
+    transition: background-color 0.3s; /* การเปลี่ยนสีพื้นหลัง */
+  }
+
+  button:hover {
+    background-color: #ff4c3b; /* เปลี่ยนสีเมื่อวางเมาส์ */
+  }
+
+  #messagesList {
+    width: 300px; /* กว้างสำหรับแสดงคำอวยพร */
+    margin-top: 20px; /* ช่องว่างด้านบน */
+  }
+
+  #messagesList div {
+    background-color: #fff; /* สีพื้นหลังของแต่ละข้อความ */
+    padding: 10px; /* ช่องว่างภายใน */
+    border-radius: 5px; /* มุมโค้ง */
+    margin-bottom: 10px; /* ช่องว่างระหว่างข้อความ */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* เงาของข้อความ */
+  }
+
+  strong {
+    color: #ff6f61; /* สีข้อความที่เป็นชื่อ */
+  }
